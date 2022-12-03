@@ -1,0 +1,42 @@
+@import "./reset";
+
+$d-cyan: hsl(185, 75%, 39%);
+$vdd-blu: hsl(229, 23%, 23%);
+$dg-blu: hsl(227, 10%, 46%);
+$d-grey: hsl(0, 0%, 59%);
+
+$attr-link: hsl(228, 45%, 44%);
+
+$ff-base: "Kumbh Sans", sans-serif;
+
+$pttrn-top: url(../../images/bg-pattern-top.svg);
+$pttrn-bot: url(../../images/bg-pattern-bottom.svg);
+
+body {
+  background: $d-cyan;
+  font-family: $ff-base;
+  display: grid;
+  place-content: center;
+  padding: 1.75rem;
+
+  .card {
+    border-radius: 1rem;
+    background: white;
+  }
+
+  .attribution {
+    font-size: 0.625rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    a {
+      color: $attr-link;
+      transition: all 0.25s ease-in;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
